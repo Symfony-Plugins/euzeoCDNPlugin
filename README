@@ -1,0 +1,53 @@
+euzeoCDN plugin
+==============
+The `euzeoCDNPlugin` is a symfony plugin that provides authentication andauthorization features above the standard security feature of symfony.
+It gives you the model (user, group and permission objects) and the modules(backend and frontend) to secure your symfony application in a minute ina configurable plugin.
+
+This idea of this plugin came after reading this blog entry : <http://www.saynotoflash.com/archives/symfony-parallel-content-delivery/>
+
+Installation
+------------
+  * Install the plugin
+
+        $ symfony plugin:install euzeoCDNPlugin
+  * Clear you cache
+
+        $ symfony cc
+
+Configuration
+-------------
+
+To secure a symfony application:
+
+  * Enable the helper`euzeoCDN` in `settings.yml`
+
+        [yml]
+          all:
+            .settings:
+              enabled_helpers: [..., euzeoCDN]
+
+  * Add your CDN domains in `app.yml`:
+
+        [yml]
+          all:
+            euzeo_cdn_plugin:
+              domains: [static1.domain.com, static2.domain.com, static3.domain.com]
+
+
+Use it
+------
+
+  * To get the url of a file :
+
+        [php]
+        echo euzeo_cdn_url('path/to/a/static/file')
+
+  * To get the image tag
+
+        [php]
+        echo euzeo_cdn_image_tag('path/to/my/image')
+
+  * You can also add options to the image tag :
+
+        [php]
+        echo euzeo_cdn_image_tag('path/to/my/image', array('alt' => 'A sample image')
