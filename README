@@ -1,7 +1,6 @@
 euzeoCDN plugin
 ==============
-The `euzeoCDNPlugin` is a symfony plugin that provides authentication andauthorization features above the standard security feature of symfony.
-It gives you the model (user, group and permission objects) and the modules(backend and frontend) to secure your symfony application in a minute ina configurable plugin.
+The `euzeoCDNPlugin` is a symfony plugin that provides an helper for parallel content delivery of image or other files.
 
 This idea of this plugin came after reading this blog entry : <http://www.saynotoflash.com/archives/symfony-parallel-content-delivery/>
 

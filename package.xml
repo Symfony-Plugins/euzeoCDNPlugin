@@ -2,8 +2,8 @@
 <package packagerversion="1.8.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>euzeoCDNPlugin</name>
  <channel>plugins.symfony-project.org</channel>
- <summary>Jerome Vandenende &amp;lt;jerome@euzeo.com&amp;gt;</summary>
- <description>Jerome Vandenende &amp;lt;jerome@euzeo.com&amp;gt;</description>
+ <summary>Helper for Parallel Content Delivery</summary>
+ <description>This plugin adds an helper for parallel content delivery.</description>
  <lead>
   <name>Jerome Vandenende &lt;jerome@euzeo.com&gt;</name>
   <user>Jerome Vandenende</user>
@@ -13,8 +13,8 @@
  <date>2010-10-13</date>
  <time>15:38:56</time>
  <version>
-  <release>1.0.0</release>
-  <api>1.0.0</api>
+  <release>0.1.1</release>
+  <api>0.1.0</api>
  </version>
  <stability>
   <release>beta</release>
@@ -29,7 +29,6 @@
    <file md5sum="1e51b8b70514d68072186ac253f29376" name="config/euzeoCDNPluginConfiguration.class.php" role="data" />
    <file md5sum="bf81c8078ee7a5ef54723c904b5072a7" name="lib/helper/euzeoCDNHelper.php" role="data" />
    <file md5sum="99d0614b2afde023dff38115b95d4595" name="lib/euzeoCDN.class.php" role="data" />
-   <file md5sum="194577a7e20bdcc7afbb718f502c134c" name=".DS_Store" role="data" />
    <file md5sum="7fff5a7789f9437174df98e8bfa4d1e9" name="LICENSE" role="data" />
    <file md5sum="8d1eb261192e4993d8af100096da8c2f" name="README" role="data" />
   </dir>
@@ -55,8 +54,23 @@
  <changelog>
 	<release>
 		<version>
-			<release>1.0.0</release>
-			<api>1.0.0</api>
+			<release>0.1.1</release>
+			<api>0.1.0</api>
+		</version>
+		<stability>
+			<release>beta</release>
+			<api>beta</api>
+		</stability>
+		<date>2010-10-13</date>
+		<license uri="http://www.symfony-project.org/license">MIT license</license>
+		<notes>
+			* updated README
+	    </notes>
+	  </release>
+	<release>
+		<version>
+			<release>0.1.0</release>
+			<api>0.1.0</api>
 		</version>
 		<stability>
 			<release>beta</release>
